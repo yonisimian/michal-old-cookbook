@@ -1,0 +1,33 @@
+* {
+  background-color: transparent;
+}
+
+:root {
+  --transition-duration: 1s;
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+body {
+  min-height: 100vh;
+  @apply text-gray-700 dark:text-gray-200 dark:bg-blue-gray-900;
+  /* @apply dark:bg-gradient-to-b dark:from-black dark:to-gray-900; */
+  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar
+{
+  width: 0;
+	background-color: transparent;
+}
+
+a {
+  @apply text-cyan-500 hover:text-cyan-400 transition-all ease-out duration-100;
+}
+
+.dark strong {
+  color: #00b3ff;
+}

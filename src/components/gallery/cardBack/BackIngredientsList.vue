@@ -1,0 +1,26 @@
+<template>
+  <div class="row-span-1 text-center px-4">
+    <p class="font-general-semibold text-xl dark:text-ternary-light font-semibold mb-2">
+      {{ list.title }}
+    </p>
+    <ul class="text-right">
+      <li
+        v-for="(ingredient, index) in list.ingredients"
+        :key="index"
+        class="text-sm dark:text-ternary-light"
+      >
+        {{ ingredient }}
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { IngredientsList } from '/@/types/types'
+
+defineProps<{
+  list: IngredientsList
+}>()
+</script>
+
+<style scoped></style>

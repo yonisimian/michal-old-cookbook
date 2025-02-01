@@ -1,0 +1,28 @@
+{
+  "name": "michal-old-cookbook",
+  "version": "0.0.1",
+  "description": "My sister's old cookbook",
+  "scripts": {
+    "dev": "vite --open --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/node": "^18.11.16",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vueuse/core": "^12.5.0",
+    "pathe": "^1.0.0",
+    "typescript": "^5.7.3",
+    "unocss": "^0.47.6",
+    "unplugin-vue-components": "^0.22.12",
+    "vite": "^4.0.1",
+    "vite-plugin-fonts": "^0.7.0",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^2.2.0"
+  }
+}
