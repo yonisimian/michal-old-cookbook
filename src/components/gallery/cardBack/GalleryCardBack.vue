@@ -3,7 +3,7 @@
   <BackBackground @click="discard">
     <BackCard @click.stop class="relative">
       <BackCloseButton @click="discard" />
-      <BackTitle :title="recipe.title" />
+      <BackTitle :title="recipe.title" class="self-center" />
       <BackDesc v-if="recipe.description" :description="recipe.description" />
       <BackIngredientsList v-for="list in recipe.ingredients" :key="list.title" :list="list" />
       <BackSteps :steps="recipe.steps" />

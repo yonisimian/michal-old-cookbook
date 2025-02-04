@@ -1,9 +1,9 @@
 <template>
-  <div class="row-span-1 text-center px-4">
-    <p class="font-general-semibold text-xl dark:text-ternary-light font-semibold mb-2">
+  <div class="row-span-1 text-right px-4">
+    <p class="font-general-semibold text-xl dark:text-ternary-light font-semibold">
       {{ list.title }}
     </p>
-    <ul class="text-right">
+    <ul class="list-disc list-inside text-right">
       <li
         v-for="(ingredient, index) in list.ingredients"
         :key="index"

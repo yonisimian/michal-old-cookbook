@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p class="font-general-semibold text-xl dark:text-ternary-light font-semibold mb-2">הערות</p>
+  <div class="row-span-1 text-right px-4">
+    <p class="font-general-semibold text-xl dark:text-ternary-light font-semibold">הערות</p>
     <p class="text-sm">
       {{ notes }}
     </p>
