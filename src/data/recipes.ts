@@ -653,17 +653,17 @@ const recipes: Recipe[] = [
       'לאחד את התערובות בתנועות קיפול, ליצוק בתבנית ולפזר מעל את הפירורים שנותרו.'
     ],
     notes: 'לאחסן מקרר איזה יום לפני ההגשה.'
-  },
-  {
-    title: ``,
-    ingredients: [
-      {
-        title: 'מצרכים',
-        ingredients: []
-      }
-    ],
-    steps: []
   }
+  // {
+  //   title: ``,
+  //   ingredients: [
+  //     {
+  //       title: 'מצרכים',
+  //       ingredients: []
+  //     }
+  //   ],
+  //   steps: []
+  // }
 ]
 
 export default recipes
