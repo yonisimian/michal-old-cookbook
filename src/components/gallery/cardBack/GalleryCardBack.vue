@@ -6,7 +6,7 @@
       <BackTitle :title="recipe.title" class="self-center" />
       <BackDesc v-if="recipe.description" :description="recipe.description" />
       <BackIngredientsList v-for="list in recipe.ingredients" :key="list.title" :list="list" />
-      <BackSteps :steps="recipe.steps" />
+      <BackSteps v-if="recipe.steps" :steps="recipe.steps" />
       <BackNotes v-if="recipe.notes" :notes="recipe.notes" />
     </BackCard>
   </BackBackground>

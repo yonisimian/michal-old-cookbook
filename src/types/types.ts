@@ -7,6 +7,6 @@ export type Recipe = {
   title: string
   description?: string
   ingredients: IngredientsList[]
-  steps: string[]
+  steps?: string[]
   notes?: string
 }
