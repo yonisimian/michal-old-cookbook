@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col mt-6 sm:gap-5">
+  <section class="grid grid-cols-1 sm:grid-cols-4 mt-6 gap-4">
     <TransitionGroup name="backCard">
       <GalleryCard
         v-for="(recipe, index) in recipes"

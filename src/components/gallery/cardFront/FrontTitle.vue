@@ -1,6 +1,6 @@
 <template>
-  <div class="row-span-1 text-center px-4 py-6">
-    <p class="font-general-semibold text-xl dark:text-ternary-light font-semibold mb-2">
+  <div class="text-center p-4 h-full flex items-center justify-center">
+    <p class="text-xl font-semibold">
       {{ title }}
     </p>
   </div>
