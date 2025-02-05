@@ -23,8 +23,20 @@ const filteredRecipes = computed(() => {
 })
 
 const filterRecipesBySearch = (recipes: Recipe[]) => {
-  let recipe = new RegExp(searchRecipe.value, 'i')
-  return recipes.filter((el) => el.title.match(recipe)) // todo: search through all fields
+  const recipe = new RegExp(searchRecipe.value, 'i')
+
+  const deepSearch = (obj: any): boolean => {
+    return Object.values(obj).some((value) => {
+      if (typeof value === 'string') {
+        return recipe.test(value)
+      } else if (typeof value === 'object' && value !== null) {
+        return deepSearch(value)
+      }
+      return false
+    })
+  }
+
+  return recipes.filter((el) => deepSearch(el))
 }
 </script>
 
